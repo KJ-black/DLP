@@ -1,0 +1,20 @@
+- For using the saved model to test
+    python3 ./main.py --load_model --filename=EEGNet_model_88_3_relu.pt --batch=128 --EEGNet
+    
+- For using the EEGNet and relu to train
+    python3 ./main.py --EEGNet --relu --train --batch=128 --epoch=1000 --learning_rate=0.001 --print_acc --print_loss
+    
+- For using the EEGNet and leaky relu to train
+    python3 ./main.py --EEGNet --lrelu --train --batch=128 --epoch=1000 --learning_rate=0.001 --print_acc --print_loss
+    
+- For using the EEGNet and ELU to train
+    python3 ./main.py --EEGNet --elu --train --batch=128 --epoch=1000 --learning_rate=0.001 --print_acc --print_loss
+    
+- For using the DeepConvNet and relu to train
+    python3 ./main.py --DeepConvNet --relu --train --batch=128 --epoch=1000 --learning_rate=0.001 --print_acc --print_loss
+    
+- For using the DeepConvNet and leaky relu to train
+    python3 ./main.py --DeepConvNet --lrelu --train --batch=128 --epoch=1000 --learning_rate=0.001 --print_acc --print_loss
+    
+- For using the DeepConvNet and ELU to train
+    python3 ./main.py --DeepConvNet --elu --train --batch=128 --epoch=1000 --learning_rate=0.001 --print_acc --print_loss
