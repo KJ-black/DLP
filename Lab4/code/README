@@ -1,0 +1,5 @@
+- For training the model using default hyperparameters
+python3 ./main.py --train
+
+- For using the model to eval
+python3 ./main.py --eval --load_model --tense_test --noise_generate
