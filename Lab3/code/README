@@ -1,0 +1,14 @@
+- For using the saved model to eval
+python3 ./main.py --eval --load_model --filename=model_50_pretrained.pt --batch=8
+
+- For using the ResNet18 with pretraining to train
+python3 ./main.py --train --ResNet18 --pretraining --batch=32 --epochs=10 --learning_rate=0.001 --weight_decay=0.0005 --save
+
+- For using the ResNet18 without pretraining to train
+python3 ./main.py --train --ResNet18 --batch=32 --epochs=10 --learning_rate=0.001 --weight_decay=0.0005 --save
+
+- For using the ResNet50 with pretrainging to train
+python3 ./main.py --train --ResNet50 --pretraining --batch=8 --epochs=5 --learning_rate=0.001 --weight_decay=0.001 --save
+
+- For using the ResNet50 without pretrainging to train
+python3 ./main.py --train --ResNet50 --batch=8 --epochs=5 --learning_rate=0.001 --weight_decay=0.001 --save
