@@ -1,0 +1,11 @@
+- For using the saved model to eval
+python3 ./main.py --eval --load_model --path="./" --test_file="test.json" 
+
+- For training the model using default hyperparameters
+python3 ./main.py --train
+
+- For training the model using assigned hyperparameters
+python3 ./main.py --train --batch=128 --epochs=1 --learning_rate=0.0002 
+
+- For training with pretrained model using default hyperparameters
+python3 ./main.py --load_model --train
